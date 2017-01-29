@@ -48,6 +48,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+    welcomeMessage: 'Here live all my projects!!',
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send('Error handling the request!');
 });
